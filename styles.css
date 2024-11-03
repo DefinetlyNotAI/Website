@@ -1,0 +1,121 @@
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1f1f1f;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 10px;
+}
+
+a {
+    color: #1e90ff;
+}
+
+.stats-container, .pinned-repos-container, .pinned-gists-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+button {
+    background-color: #1f1f1f;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #333333;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1f1f1f;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Add this CSS to support dark mode toggle */
+body.dark-mode {
+    background-color: #ffffff;
+    color: #121212;
+}
+
+body.dark-mode header {
+    background-color: #e0e0e0;
+}
+
+body.dark-mode nav ul li a {
+    color: #121212;
+}
+
+body.dark-mode button {
+    background-color: #e0e0e0;
+    color: #121212;
+    border: 1px solid #121212;
+}
+
+body.dark-mode .footer {
+    background-color: #e0e0e0;
+}
+
+div {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .stats-container, .pinned-repos-container, .pinned-gists-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer {
+        position: static;
+    }
+}
